@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,200&display=swap');
+
+body{
+    font-family: 'Barlow', sans-serif;
+    
+    text-align: center;
+}
+
+.top{
+    max-width: 60%;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: lightgreen;
+    margin: 4rem auto 7rem;
+    text-align: center;
+}
+
+#my{
+zoom: 90%;
+}
+
+#describe{
+    
+    font-size: larger;
+}
+#label-1{
+    font-size: x-large;
+    
+    color:rgb(14, 58, 14) ;
+}
+
+#box-1{
+    min-width: 25%;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    border-color: lightgreen;
+    background-color:rgb(14, 58, 14);
+    color:white;
+    margin-bottom: 1rem;
+}
+#box-2{
+    min-width: 25%;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    border-color: lightgreen;
+    background-color:rgb(14, 58, 14);
+    color:white;
+    margin-bottom: 1rem;
+}
+button{
+    border-radius: 0.5rem;
+    padding:0.25rem;
+    border-color:rgb(14, 58, 14);
+    background-color: lightgreen;
+    color: black;
+    margin-right:1rem;
+
+}
+
+/* Table */
+.change {
+    width: 60%;
+    text-align: justify;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  
+  .change caption {
+    margin: 1rem auto;
+    font-size: x-large;
+    font-weight: 500;
+    color: rgb(14, 58, 14);
+  }
+  
+  th,
+  td {
+    border: 2px solid rgb(14, 58, 14);
+    width: 5%;
+    border-collapse: collapse;
+    padding: 0.4rem;
+  }
+  footer p {
+    margin-top: 10%;
+    font-size: large;
+    text-align: center;
+  }
+  
+  .footer-list {
+    margin-top: 1rem;
+  }
+  
+  a,
+  img,
+  li {
+    display: inline;
+  }
+  
+  .img-2 {
+    width: 30px;
+    padding: 0.1rem;
+  }

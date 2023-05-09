@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <!-- JDBCCONTROLLER -->
+    <servlet>
+        <servlet-name>JdbcController</servlet-name>
+        <servlet-class>controller.JdbcController</servlet-class>
+        <init-param>
+            <param-name>jdbcClassName</param-name>
+            <param-value>org.apache.derby.jdbc.ClientDriver</param-value>
+            <!-- org.apache.derby.jdbc.ClientDriver -->
+            <!-- com.mysql.cj.jdbc.Driver -->
+        </init-param>
+        <init-param>
+            <param-name>dbUserName</param-name>
+            <param-value>app</param-value>
+            <!-- app -->
+            <!-- root -->
+        </init-param>
+        <init-param>
+            <param-name>dbPassword</param-name>
+            <param-value>app</param-value>
+            <!-- app -->
+            <!-- root -->
+        </init-param>
+        <init-param>
+            <param-name>jdbcDriverURL</param-name>
+            <param-value>jdbc:derby</param-value>
+            <!-- jdbc:derby -->
+            <!-- jdbc:mysql -->
+        </init-param>
+        <init-param>
+            <param-name>dbHostName</param-name>
+            <param-value>localhost</param-value>
+        </init-param>
+        <init-param>
+            <param-name>dbPort</param-name>
+            <param-value>1527</param-value>
+            <!-- 1527 -->
+            <!-- 3306 -->
+        </init-param>
+        <init-param>
+            <param-name>databaseName</param-name>
+            <param-value>LoginDB</param-value>
+            <!-- LoginDB -->
+            <!-- logindb?useSSL=false -->
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JdbcController</servlet-name>
+        <url-pattern>/JdbcController</url-pattern>
+    </servlet-mapping>
+    
+    <!-- GENERATEPDFSERVLET -->
+    <servlet>
+        <servlet-name>GeneratePdfServlet</servlet-name>
+        <servlet-class>controller.GeneratePdfServlet</servlet-class>
+        <init-param>
+            <param-name>jdbcClassName</param-name>
+            <param-value>org.apache.derby.jdbc.ClientDriver</param-value>
+            <!-- org.apache.derby.jdbc.ClientDriver -->
+            <!-- com.mysql.cj.jdbc.Driver -->
+        </init-param>
+        <init-param>
+            <param-name>dbUserName</param-name>
+            <param-value>app</param-value>
+            <!-- app -->
+            <!-- root -->
+        </init-param>
+        <init-param>
+            <param-name>dbPassword</param-name>
+            <param-value>app</param-value>
+            <!-- app -->
+            <!-- root -->
+        </init-param>
+        <init-param>
+            <param-name>jdbcDriverURL</param-name>
+            <param-value>jdbc:derby</param-value>
+            <!-- jdbc:derby -->
+            <!-- jdbc:mysql -->
+        </init-param>
+        <init-param>
+            <param-name>dbHostName</param-name>
+            <param-value>localhost</param-value>
+        </init-param>
+        <init-param>
+            <param-name>dbPort</param-name>
+            <param-value>1527</param-value>
+            <!-- 1527 -->
+            <!-- 3306 -->
+        </init-param>
+        <init-param>
+            <param-name>databaseName</param-name>
+            <param-value>LoginDB</param-value>
+            <!-- LoginDB -->
+            <!-- logindb?useSSL=false -->
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GeneratePdfServlet</servlet-name>
+        <url-pattern>/GeneratePdfServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- GUESTREPORTSERVLET -->
+    <servlet>
+        <servlet-name>GuestReportServlet</servlet-name>
+        <servlet-class>controller.GuestReportServlet</servlet-class>
+        <init-param>
+            <param-name>jdbcClassName</param-name>
+            <param-value>org.apache.derby.jdbc.ClientDriver</param-value>
+            <!-- org.apache.derby.jdbc.ClientDriver -->
+            <!-- com.mysql.cj.jdbc.Driver -->
+        </init-param>
+        <init-param>
+            <param-name>dbUserName</param-name>
+            <param-value>app</param-value>
+            <!-- app -->
+            <!-- root -->
+        </init-param>
+        <init-param>
+            <param-name>dbPassword</param-name>
+            <param-value>app</param-value>
+            <!-- app -->
+            <!-- root -->
+        </init-param>
+        <init-param>
+            <param-name>jdbcDriverURL</param-name>
+            <param-value>jdbc:derby</param-value>
+            <!-- jdbc:derby -->
+            <!-- jdbc:mysql -->
+        </init-param>
+        <init-param>
+            <param-name>dbHostName</param-name>
+            <param-value>localhost</param-value>
+        </init-param>
+        <init-param>
+            <param-name>dbPort</param-name>
+            <param-value>1527</param-value>
+            <!-- 1527 -->
+            <!-- 3306 -->
+        </init-param>
+        <init-param>
+            <param-name>databaseName</param-name>
+            <param-value>LoginDB</param-value>
+            <!-- LoginDB -->
+            <!-- logindb?useSSL=false -->
+        </init-param>
+    </servlet>
+        <servlet-mapping>
+        <servlet-name>GuestReportServlet</servlet-name>
+        <url-pattern>/GuestReportServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- SIGNUPSERVLET -->
+    <servlet>
+        <servlet-name>SignupServlet</servlet-name>
+        <servlet-class>controller.SignupServlet</servlet-class>
+        <init-param>
+            <param-name>jdbcClassName</param-name>
+            <param-value>org.apache.derby.jdbc.ClientDriver</param-value>
+            <!-- org.apache.derby.jdbc.ClientDriver -->
+            <!-- com.mysql.cj.jdbc.Driver -->
+        </init-param>
+        <init-param>
+            <param-name>dbUserName</param-name>
+            <param-value>app</param-value>
+            <!-- app -->
+            <!-- root -->
+        </init-param>
+        <init-param>
+            <param-name>dbPassword</param-name>
+            <param-value>app</param-value>
+            <!-- app -->
+            <!-- root -->
+        </init-param>
+        <init-param>
+            <param-name>jdbcDriverURL</param-name>
+            <param-value>jdbc:derby</param-value>
+            <!-- jdbc:derby -->
+            <!-- jdbc:mysql -->
+        </init-param>
+        <init-param>
+            <param-name>dbHostName</param-name>
+            <param-value>localhost</param-value>
+        </init-param>
+        <init-param>
+            <param-name>dbPort</param-name>
+            <param-value>1527</param-value>
+            <!-- 1527 -->
+            <!-- 3306 -->
+        </init-param>
+        <init-param>
+            <param-name>databaseName</param-name>
+            <param-value>LoginDB</param-value>
+            <!-- LoginDB -->
+            <!-- logindb?useSSL=false -->
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignupServlet</servlet-name>
+        <url-pattern>/SignupServlet</url-pattern>
+    </servlet-mapping>
+    <!-- CAPTCHASERVLET -->
+    <servlet>
+        <servlet-name>CaptchaServlet</servlet-name>
+        <servlet-class>controller.CaptchaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CaptchaServlet</servlet-name>
+        <url-pattern>/CaptchaServlet</url-pattern>
+    </servlet-mapping>
+    <!-- PUBLIC/SECRET KEY -->
+    <context-param>
+        <param-name>security_key</param-name>
+        <param-value>ics_2609ics_2609</param-value>
+    </context-param>
+    <listener>
+        <listener-class>model.Security</listener-class>
+    </listener>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+    <servlet-mapping>
+        <servlet-name>GeneratePdfServlet</servlet-name>
+        <url-pattern>/GeneratePdfServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuestReportServlet</servlet-name>
+        <url-pattern>/GuestReportServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
